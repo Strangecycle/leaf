@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package go.micro.service.user;
+
+option go_package = "/user";
+
+service User {
+  
+}
+
+message Test {
+  string hello = 1;
+}
