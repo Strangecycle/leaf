@@ -31,6 +31,7 @@ func init() {
 	}
 
 	err = c.Get("consul").Scan(&consulConf)
+	err = c.Get("database").Scan(&dbConf)
 
 	if err != nil {
 		logger.Fatal("failed to load config: ", err.Error())

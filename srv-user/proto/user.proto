@@ -5,9 +5,17 @@ package go.micro.service.user;
 option go_package = "/user";
 
 service User {
-  
+  rpc UserLogin(LoginRequest) returns (LoginResponse) {}
 }
 
-message Test {
-  string hello = 1;
+message LoginRequest {
+  string phone = 1;
+  string code = 2;
+}
+
+message LoginResponse {
+  int32 code = 1;
+  string message = 2;
+  string token = 3;
+  int64 expire_at = 4;
 }

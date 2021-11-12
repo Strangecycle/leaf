@@ -13,4 +13,6 @@ require (
 	github.com/pascaldekloe/goe v0.1.0 // indirect
 	github.com/prometheus/client_golang v1.2.1 // indirect
 	google.golang.org/protobuf v1.27.1
+	gorm.io/driver/mysql v1.1.3
+	gorm.io/gorm v1.22.2
 )
